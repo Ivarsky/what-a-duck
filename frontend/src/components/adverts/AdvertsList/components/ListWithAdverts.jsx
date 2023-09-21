@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { Button, CardGroup, Card, ListGroup } from "react-bootstrap";
 import placeholderPhoto from "../../../../assets/placeholder.png";
-import { useUserAuthentication } from "../hooks"
+import { useAuth } from "../../../auth/AuthContext";
 
 
 export const ListWithAdverts = ({ filterPosts }) => {
-  const isLoggedIn = useUserAuthentication();
+  const { isLogged } = useAuth();
 
   return (
     <>
@@ -15,8 +15,8 @@ export const ListWithAdverts = ({ filterPosts }) => {
           style={{
             textDecoration: "none",
             position: "absolute",
-            top: "110px",
-            right: "140px",
+            top: "55px",
+            right: "150px",
           }}
         >
           <Button variant="secondary">Crear Anuncio</Button>
