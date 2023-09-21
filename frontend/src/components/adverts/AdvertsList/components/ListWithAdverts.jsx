@@ -9,7 +9,7 @@ export const ListWithAdverts = ({ filterPosts }) => {
 
   return (
     <>
-      {isLoggedIn && (
+      {isLogged && (
         <Link
           to="/create-advert"
           style={{
