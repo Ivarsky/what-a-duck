@@ -22,9 +22,6 @@ function Contact() {
     getAdvert(params.advertId).then((advert) => setAdvert(advert));
   }, [params.advertId]);
 
-  //TODO: botones de modificar anuncios o borrar en caso de ser dueño del anuncio
-  //TODO: boton de contactar en caso de querer vender al anunciante o de comprar en caso de querer comprar.
-
   // Estado para almacenar el mensaje de éxito
   const [successMessage, setSuccessMessage] = useState("");
 
@@ -65,7 +62,7 @@ function Contact() {
       postPrice: advert.price,
       postTag: advert.tags,
       postUsername: advert.username,
-      postemail: advert.email,
+      postemail: advert.senderEmail,
       senderEmail: emailToken,
       senderName: username,
     };
