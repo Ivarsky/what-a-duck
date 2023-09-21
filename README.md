@@ -1,6 +1,6 @@
 # Wallapop Clon
 
-Proyecto de clon de wallapop realizado por el equipo Mighty Ducks.
+Proyecto de clon de wallapop realizado por el equipo Mighty Ducks .
 
 Creado con express generator y create react app
 
